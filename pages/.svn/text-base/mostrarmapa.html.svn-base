@@ -1,0 +1,28 @@
+<!-- Home -->
+<div data-role="page" id="mostrarmapa"  data-fullscreen="true">
+
+    <div id="idpageheader" data-theme="e" data-role="header">
+		<a href="#popupPanel" data-rel="popup" data-role="button" data-theme="a" data-icon="grid" data-transition="slide"  data-iconpos="notext">Open panel</a>
+        <fieldset data-role="controlgroup" data-type="horizontal" style="top: -5px;left:40px;position:absolute; width:200px">
+            <input type="checkbox" name="vehiculo" id="mapavehiculo" class="custom" data-mini="true" checked="checked" />
+            <label for="mapavehiculo">vehiculo</label>
+            <input type="checkbox" name="usuario" id="mapausuario" class="custom" data-mini="true" checked="checked"/>
+            <label for="mapausuario">usuario</label>
+        </fieldset>
+	   	<h3>Atlas Mapa</h3>
+		<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right" style="right:0px">Close</a>			
+    </div>
+<script>
+		$("#map").height(window.innerHeight-45);
+		$("#tablamapa").height(window.innerHeight-3);
+</script>
+    <div id="map" style="width:100%"></div>
+    <canvas id="myCanvas" width="200" height="35" style="display: none;">
+<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+
+   <div id="tablamapa" style="width:100%;overflow:auto"></div>
+	 
+</div>    
+</div>
+
+

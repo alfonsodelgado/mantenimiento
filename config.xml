@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.reactiva.AtlasFacturaMovil"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+	<icon src="css/images/logo.png" gap:platform="winphone" />
+	<icon src="css/images/logo.png" gap:platform="winphone" gap:role="background" />	
+	
+    <name>Atlas Mantenimiento Movil</name>
+
+    <description>
+        Esta aplicacion es para registrar los gastos generados en la prestacion de un servicio publico de transporte.
+    </description>
+
+    <author href="http://www.reactiva.com.co" email="alfonsodelgado@reactiva.com.co">
+        Alfonso Delgado Santofimio 
+    </author>
+
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+</widget>

@@ -1,0 +1,32 @@
+<!-- Home -->
+<div data-role="page" id="visualizar" data-dom-cache="true" class="ui-dialog-background,ui-dialog-background.pop.in,ui-content ui-body-e" data-fullscreen="true">
+    <div id="idpageheader" data-theme="e" data-role="header">
+        <a href="#" id="butonhome" data-role="button" data-inline="true" data-icon="home" data-mini="true" data-iconpos="notext"></a>   
+        <h3 id="idtxtheadervisualizar">
+            Atlas Visualizar Servicios
+        </h3>
+        <a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="info" data-mini="true" data-iconpos="notext" class="ui-btn-right"></a>
+    </div>
+    <div data-role="collapsible-set" id="acordeonvisualizar" data-dom-cache="false">
+    </div>
+    <div id="idpagefooter" data-theme="a" data-role="footer">
+        <h1 id="idtextfooter">
+            epii.com.co
+        </h1>
+    </div>
+    <div data-role="popup" id="modificarservicio" data-theme="d" data-overlay-theme="b" class="ui-content" ><!--style="max-width:340px;"-->
+    </div>
+    <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+        <div style="padding:10px 20px;">
+        <h3>Sincronizar:</h3>
+        <div data-role="fieldcontain" id="divsincronizarusuarios">
+        </div>
+        <input type="button" data-inline="true" data-icon="check" data-iconpos="left" value="Sincronizar" id="butonenviodatos" data-mini="true" data-theme="b">
+        </div>
+    </div>    
+	<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false">
+		<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <img class="popphoto" id="idmostrarfoto" title="visualizar la foto" />
+	</div>    
+</div>
+

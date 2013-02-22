@@ -1,0 +1,26 @@
+<div data-role="content" data-theme="e">
+	<fieldset data-role="controlgroup" data-type="horizontal">
+		<legend>Fecha:</legend>
+		
+		<label for="iddia">Dia</label>
+		<select name="iddia" id="iddia">
+		</select>
+
+		<label for="idmes">Mes</label>
+		<select name="idmes" id="idmes">
+		</select>
+
+		<label for="idano">Año</label>
+		<select name="idano" id="idano">
+		</select>
+	</fieldset>
+    <div data-role="fieldcontain">
+        <label for="idplacamapa">Placa:</label>
+        <select name="placa" id="idplacamapa">
+            <option value="" selected="selected"> seleccionar</option>
+        </select> 
+    </div>
+<input type="button" data-inline="true" data-icon="check" data-iconpos="left" value="mostrar" id="butonmostrarmapa" data-mini="true" data-theme="e">
+</div>
+
+

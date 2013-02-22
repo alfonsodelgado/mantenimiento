@@ -1,0 +1,25 @@
+<div data-role="content" data-theme="e">
+    <div data-role="fieldcontain">
+        <label for="idconcepto">Concepto:</label>
+          <select name="concepto" id="idconcepto" title="Concepto">
+            <option> seleccionar</option>
+        </select>   
+    </div>
+    <div id="divdetalleservicio">
+    </div>  
+    <div class="ui-grid-a">
+        <div class="ui-block-a">
+            <input type="button" data-icon="plus" data-inline="true" data-iconpos="left" value="agregar" id="butonregistrardetalleservicio" data-mini="true" data-theme="e" title="Agregar detalle">
+        </div>
+        <div class="ui-block-b">
+            <a href="#popupdetalleservicio" id="butonfinalizardetalleserviciovalidar" data-rel="popup" data-position-to="window" data-mini="true" data-role="button" data-inline="true" data-transition="pop" data-iconpos="notext" data-icon="check">Finalizar</a>
+        </div>											
+    </div>
+</div>
+
+<div data-role="popup" id="popupdetalleservicio" data-overlay-theme="a" data-theme="c" style="max-width:200px;max-height:150px" >
+    <h3>Esta seguro de finalizar el servicio?</h3>
+    <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c" data-mini="true">Cancel</a>    
+    <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-inline="true" data-icon="check" value="finalizar" id="butonfinalizardetalleservicio" data-mini="true" data-theme="e"></a>  
+</div>   
+

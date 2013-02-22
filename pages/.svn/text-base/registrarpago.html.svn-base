@@ -1,0 +1,24 @@
+    <div data-role="content" data-theme="e">
+        <div data-role="fieldcontain">
+                <label for="idusuario">Usuario:</label>
+                <select name="usuario" id="idusuario">
+                	<option> seleccionar</option>
+                </select>   
+        </div>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+                <label for="idvalorpago">
+                    Valor:
+                </label>
+                <input name="valor" id="idvalorpago" type="text" />
+            </fieldset>
+        </div>        
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+                <label for="textareaobservacionpago">Observacion</label>
+                <textarea id="textareaobservacionpago"></textarea>
+            </fieldset>
+        </div>        
+            <input type="button" data-inline="true" data-icon="check" data-iconpos="left" value="pagar" id="butonrealizarpago" data-mini="true" data-theme="e">
+    </div>
+

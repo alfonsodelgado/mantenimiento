@@ -5,24 +5,24 @@
 <file name="icons-36-white.png" server="//192.168.10.10/atlasmantenimiento/" local="129936686040000000" remote="129936686040000000" />
 <file name="icons-36-black.png" server="//192.168.10.10/atlasmantenimiento/" local="129936686040000000" remote="129936686040000000" />
 <file name="ajax-loader.gif" server="//192.168.10.10/atlasmantenimiento/" local="129936686040000000" remote="129936686040000000" />
-<file name="ajax-loader.gif" server="C:/wamp/apps/atlas/" local="129936686040000000" remote="129936686040000000" />
-<file name="icons-18-black.png" server="C:/wamp/apps/atlas/" local="129936686040000000" remote="129936686040000000" />
-<file name="icons-18-white.png" server="C:/wamp/apps/atlas/" local="129936686040000000" remote="129936686040000000" />
-<file name="icons-36-black.png" server="C:/wamp/apps/atlas/" local="129936686040000000" remote="129936686040000000" />
-<file name="icons-36-white.png" server="C:/wamp/apps/atlas/" local="129936686040000000" remote="129936686040000000" />
-<file name="logoAtlas.png" server="C:/wamp/apps/atlas/" local="130039818235408200" remote="130039818230000000" />
-<file name="alerta.png" server="C:/wamp/apps/atlas/" local="130045738382698419" remote="130045738380000000" />
-<file name="centro.png" server="C:/wamp/apps/atlas/" local="130045738382588412" remote="130045738380000000" />
-<file name="inicio.png" server="C:/wamp/apps/atlas/" local="130045738382638415" remote="130045738380000000" />
-<file name="ACCStart.png" server="C:/wamp/apps/atlas/" local="130047263509358645" remote="130047263500000000" />
-<file name="ACCStop.png" server="C:/wamp/apps/atlas/" local="130047263509118631" remote="130047263500000000" />
-<file name="battery.png" server="C:/wamp/apps/atlas/" local="130047263509418649" remote="130047263500000000" />
-<file name="Low batt.png" server="C:/wamp/apps/atlas/" local="130047263509468651" remote="130047263500000000" />
-<file name="SHAKE.png" server="C:/wamp/apps/atlas/" local="130047263509518654" remote="130047263500000000" />
-<file name="speed.png" server="C:/wamp/apps/atlas/" local="130047263509238638" remote="130047263500000000" />
-<file name="stockade.png" server="C:/wamp/apps/atlas/" local="130047263509178635" remote="130047263500000000" />
-<file name="Trigger.png" server="C:/wamp/apps/atlas/" local="130047263509298642" remote="130047263500000000" />
-<file name="fin.png" server="C:/wamp/apps/atlas/" local="130045738382448404" remote="130045738380000000" />
-<file name="centroTabla.png" server="C:/wamp/apps/atlas/" local="130048070526759487" remote="130048070520000000" />
-<file name="logo.png" server="C:/wamp/apps/atlas/" local="130048103253781366" remote="130048103250000000" />
+<file name="ajax-loader.gif" server="C:/wamp/apps/atlas/" local="130060127868455149" remote="130060127860000000" />
+<file name="icons-18-black.png" server="C:/wamp/apps/atlas/" local="130060127868525153" remote="130060127860000000" />
+<file name="icons-18-white.png" server="C:/wamp/apps/atlas/" local="130060127868625159" remote="130060127860000000" />
+<file name="icons-36-black.png" server="C:/wamp/apps/atlas/" local="130060127868545154" remote="130060127860000000" />
+<file name="icons-36-white.png" server="C:/wamp/apps/atlas/" local="130060127868605158" remote="130060127860000000" />
+<file name="logoAtlas.png" server="C:/wamp/apps/atlas/" local="130060127868655161" remote="130060127860000000" />
+<file name="alerta.png" server="C:/wamp/apps/atlas/" local="130060127868465150" remote="130060127860000000" />
+<file name="centro.png" server="C:/wamp/apps/atlas/" local="130060127868675162" remote="130060127860000000" />
+<file name="inicio.png" server="C:/wamp/apps/atlas/" local="130060127868485151" remote="130060127860000000" />
+<file name="ACCStart.png" server="C:/wamp/apps/atlas/" local="130060127868435148" remote="130060127860000000" />
+<file name="ACCStop.png" server="C:/wamp/apps/atlas/" local="130060127868285140" remote="130060127860000000" />
+<file name="battery.png" server="C:/wamp/apps/atlas/" local="130060127868505152" remote="130060127860000000" />
+<file name="Low batt.png" server="C:/wamp/apps/atlas/" local="130060127868565156" remote="130060127860000000" />
+<file name="SHAKE.png" server="C:/wamp/apps/atlas/" local="130060127868685163" remote="130060127860000000" />
+<file name="speed.png" server="C:/wamp/apps/atlas/" local="130060127868375145" remote="130060127860000000" />
+<file name="stockade.png" server="C:/wamp/apps/atlas/" local="130060127868305141" remote="130060127860000000" />
+<file name="Trigger.png" server="C:/wamp/apps/atlas/" local="130060127868415147" remote="130060127860000000" />
+<file name="fin.png" server="C:/wamp/apps/atlas/" local="130060127868585157" remote="130060127860000000" />
+<file name="centroTabla.png" server="C:/wamp/apps/atlas/" local="130060127868345143" remote="130060127860000000" />
+<file name="logo.png" server="C:/wamp/apps/atlas/" local="130060127868395146" remote="130060127860000000" />
 </dwsync>

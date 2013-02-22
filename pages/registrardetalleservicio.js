@@ -9,7 +9,7 @@ function pageregistrardetalleservicio(){
 		$("#divdetalleservicio").html('');
 		$("#divdetalleservicio").trigger("create")
 	}
-	$('#butonregistrardetalleservicio').enable();
+	$('#butonregistrardetalleservicio').removeAttr("disabled");
 }
 
 $("#idvalor").live('keypress',function(e){
@@ -25,8 +25,8 @@ $('#idconcepto').live('change',function(){
 });
 
 $('#butonregistrardetalleservicio').live('click',function(){
-	$('#butonregistrardetalleservicio').disable();
-	alert("apagando");	
+	$('#butonregistrardetalleservicio').attr("disabled", true);
+	alert("apagando aque");	
 	var concepto = $('#idconcepto').val();
 	if (!concepto||concepto == 'seleccionar') { 
 		new error('Error','Por favor escoja el concepto.','servicio').vererror();

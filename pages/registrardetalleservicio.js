@@ -9,6 +9,7 @@ function pageregistrardetalleservicio(){
 		$("#divdetalleservicio").html('');
 		$("#divdetalleservicio").trigger("create")
 	}
+	$('#butonregistrardetalleservicio').enable();
 }
 
 $("#idvalor").live('keypress',function(e){
@@ -24,6 +25,8 @@ $('#idconcepto').live('change',function(){
 });
 
 $('#butonregistrardetalleservicio').live('click',function(){
+	$('#butonregistrardetalleservicio').disable();
+	alert("apagando");	
 	var concepto = $('#idconcepto').val();
 	if (!concepto||concepto == 'seleccionar') { 
 		new error('Error','Por favor escoja el concepto.','servicio').vererror();

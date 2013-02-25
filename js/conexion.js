@@ -272,7 +272,7 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 //var urls= 'http://192.168.10.64:8097/atlas/rest/atlasWS/sincronizar' ;
 	try{
 		$.ajax({
-			type: 'GET',
+			type: 'POST',
 			url: urls ,
 			dataType: 'jsonp',
 			jsonpCallback: 'callback',

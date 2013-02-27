@@ -271,18 +271,22 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 //var urls= 'http://192.168.10.64:8097/atlas/rest/atlasWS/sincronizar' ;
 	try{
 		if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
+		
+
+		
+		
 			var wsUrl = 'http://www.reactiva.com.co:8097/atlas/wsdl/AtlasWS?wsdl';
-			var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/ xmlns:atl="http://www.reactiva.com.co:8097/atlas/wsdl/AtlasWS \
-			<soapenv:Body> \
-				<atl:sincronizar> \
-					<login>' + logins + '</login> \
-					<password>' +paswords + '</password> \
-					<datosPlanilla>'+listajson+'</datosPlanilla> \
-					<inicializar>'+inicializarse+'</inicializar> \
-					<usuarios>'+sincronizardatos+'</usuarios> \
-				</atl:sincronizar> \
-			</soapenv:Body> \
-			</soapenv:Envelope>';
+			var soapRequest =	'<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:atl="http://www.reactiva.com.co:8097/atlas/wsdl/AtlasWS"> \
+									<soapenv:Body> \
+										<atl:sincronizar> \
+											<login>' + logins + '</login> \
+											<password>' +paswords + '</password> \
+											<datosPlanilla>'+listajson+'</datosPlanilla> \
+											<inicializar>'+inicializarse+'</inicializar> \
+											<usuarios>'+sincronizardatos+'</usuarios> \
+										</atl:sincronizar> \
+									</soapenv:Body> \
+								</soapenv:Envelope>';
 			
 			$.ajax({
 			type: "POST",
@@ -294,6 +298,7 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 			success: success,
 			error: error
 			});
+			
 		}else{
 			var urls ='http://www.reactiva.com.co:8097/atlas/rest/atlasWS/sincronizar' ;
 		$.ajax({

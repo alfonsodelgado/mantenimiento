@@ -327,7 +327,9 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 						alert("jsoan antes");
 
 			if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
-				data=JSON.parse(data);
+			 	var xml = jqXHR.responseText;
+				var response = $(xml).find("return").text();
+				data=JSON.parse(response);
 			}
 						alert("json despues");
 

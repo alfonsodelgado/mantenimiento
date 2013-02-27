@@ -324,16 +324,26 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 			new error('Error','Datos incorrectos').vererror();
 		}else{
 			console.log(data);
+						alert("jsoan antes");
+
 			if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
 				data=JSON.parse(data);
 			}
+						alert("json despues");
+
 			console.log(data);
 			crearTablas(logins,paswords,data);
+						alert("crear tablas");
+
 			console.log("transmisioninsert");
 			ejecutartablas(transmisioninsert);
+						alert("ejecutartablas1");
+
 			console.log("transmisionupdate");
 			ejecutartablas(transmisionupdate);
+			alert("ejecutartablas2");
 			registrarlogin(logins,paswords);
+						alert("login");
 			ejecutarbd();
 		}
 	}

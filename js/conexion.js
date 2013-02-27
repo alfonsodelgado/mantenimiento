@@ -324,6 +324,10 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 			new error('Error','Datos incorrectos').vererror();
 		}else{
 			console.log(data);
+			if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
+				data=JSON.parse(data);
+			}
+			console.log(data);
 			crearTablas(logins,paswords,data);
 			console.log("transmisioninsert");
 			ejecutartablas(transmisioninsert);

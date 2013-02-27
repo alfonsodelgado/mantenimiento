@@ -271,10 +271,6 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 //var urls= 'http://192.168.10.64:8097/atlas/rest/atlasWS/sincronizar' ;
 	try{
 		if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
-		
-
-		
-		
 			var wsUrl = 'http://www.reactiva.com.co:8097/atlas/wsdl/AtlasWS?wsdl';
 			var soapRequest =	'<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:atl="http://www.reactiva.com.co:8097/atlas/wsdl/AtlasWS"> \
 									<soapenv:Body> \
@@ -324,28 +320,18 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 			new error('Error','Datos incorrectos').vererror();
 		}else{
 			console.log(data);
-						alert("jsoan antes");
-
 			if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
 			 	var xml = jqXHR.responseText;
 				var response = $(xml).find("return").text();
 				data=JSON.parse(response);
 			}
-						alert("json despues");
-
 			console.log(data);
 			crearTablas(logins,paswords,data);
-						alert("crear tablas");
-
 			console.log("transmisioninsert");
 			ejecutartablas(transmisioninsert);
-						alert("ejecutartablas1");
-
 			console.log("transmisionupdate");
 			ejecutartablas(transmisionupdate);
-			alert("ejecutartablas2");
 			registrarlogin(logins,paswords);
-						alert("login");
 			ejecutarbd();
 		}
 	}

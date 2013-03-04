@@ -317,7 +317,7 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 	}
 	function success(data, textStatus, jqXHR) {
 		if(typeof(data.error) != "undefined"){
-			new error('Error','Datos incorrectos').vererror();
+			new error('Error','Datos incorrectos'+data.error).vererror();
 		}else{
 			console.log(data);
 			if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	

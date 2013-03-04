@@ -316,20 +316,16 @@ function sincronizarBD(logins,paswords,inicializarse,sincronizardatos){
 		new error('Error','Datos incorrectos. invocando web service '+data.error).vererror();
 	}
 	function success(data, textStatus, jqXHR) {
+		if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
+			var xml = jqXHR.responseText;
+			var response = $(xml).find("return").text();
+			data=JSON.parse(response);
+		}
 		if(typeof(data.error) != "undefined"){
 			new error('Error','Datos incorrectos'+data.error).vererror();
 		}else{
-			console.log(data);
-			if (typeof(Cordova) != 'undefined' || typeof(cordova) != 'undefined'){	
-			 	var xml = jqXHR.responseText;
-				var response = $(xml).find("return").text();
-				data=JSON.parse(response);
-			}
-			console.log(data);
 			crearTablas(logins,paswords,data);
-			console.log("transmisioninsert");
 			ejecutartablas(transmisioninsert);
-			console.log("transmisionupdate");
 			ejecutartablas(transmisionupdate);
 			registrarlogin(logins,paswords);
 			ejecutarbd();

@@ -972,8 +972,8 @@ function modificarservicio(idservicio){
 				miid = results.rows.item(i).id;		 
 				for (var j=i; j<results.rows.length; j++){     
 					if (miid==results.rows.item(j).id){
-						if(results.rows.item(j).idconcepto!=null){
-						mi_concepto.unshift(results.rows.item(j).idconcepto);
+						if(results.rows.item(j).idconcepto!=null&&results.rows.item(j).visible=='true'){
+						mi_concepto.push(results.rows.item(j).idconcepto);
 						mi_div+='<li data-role="fieldcontain">'+
 								'<div class="ui-grid-a">'+
 									'<div class="ui-block-a">'+

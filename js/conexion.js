@@ -394,7 +394,11 @@ function crearTablas(login,password,datosTablasJson){
 				if(typeof(servicios[i].id) == "undefined"){
 					transmisioninsert.unshift('DELETE FROM detalleservicio WHERE idservidor='+arraydetalleservicio[j].idservidor+';');
 				}else{
-					transmisioninsert.unshift('DELETE FROM detalleservicio WHERE id='+arraydetalleservicio[j].id+';');	
+				//	console.log("aaa"+arraydetalleservicio[j].id);
+				//	alert("nose"+arraydetalleservicio[j].id);
+					if(typeof(arraydetalleservicio[j].id) != "undefined"){//para cuando se crea en el servidor
+						transmisioninsert.unshift('DELETE FROM detalleservicio WHERE id='+arraydetalleservicio[j].id+';');	
+					}
 				}
 			}
 			if(typeof(servicios[i].id) == "undefined"){

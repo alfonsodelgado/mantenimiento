@@ -884,7 +884,8 @@ function modificarservicio(idservicio){
 			   " AND detalleservicio.idconcepto=concepto.id "+
 			   " AND (servicio.estado <> 'INICIAL' "+
 			   " AND servicio.id="+idservicio+")"+
-			   " ORDER BY servicio.id desc;";
+			   " ORDER BY servicio.id desc,detalleservicio.id;";
+			   			   
 /*
 	cadena =  "SELECT servicio.id,"+	  
 					" servicio.fecha,"+
